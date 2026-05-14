@@ -243,10 +243,9 @@ export function runCoordSymmetryAmp(input) {
  */
 export function verticalMirror(coord, axisX) {
   return {
+    ...coord,
     x: Math.round((axisX * 2) - coord.x),
     y: coord.y,
-    color: coord.color,
-    emphasis: coord.emphasis,
   };
 }
 
@@ -255,10 +254,9 @@ export function verticalMirror(coord, axisX) {
  */
 export function horizontalMirror(coord, axisY) {
   return {
+    ...coord,
     x: coord.x,
     y: Math.round((axisY * 2) - coord.y),
-    color: coord.color,
-    emphasis: coord.emphasis,
   };
 }
 
@@ -269,12 +267,11 @@ export function radialRotate(coord, centerX, centerY, angle = 90) {
   const rad = (angle * Math.PI) / 180;
   const dx = coord.x - centerX;
   const dy = coord.y - centerY;
-  
+
   return {
+    ...coord,
     x: Math.round(centerX + dx * Math.cos(rad) - dy * Math.sin(rad)),
     y: Math.round(centerY + dx * Math.sin(rad) + dy * Math.cos(rad)),
-    color: coord.color,
-    emphasis: coord.emphasis,
   };
 }
 
@@ -283,10 +280,9 @@ export function radialRotate(coord, centerX, centerY, angle = 90) {
  */
 export function diagonalMirror(coord) {
   return {
+    ...coord,
     x: coord.y,
     y: coord.x,
-    color: coord.color,
-    emphasis: coord.emphasis,
   };
 }
 
