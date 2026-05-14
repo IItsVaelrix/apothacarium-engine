@@ -8,6 +8,9 @@
     "node": ">=22.0.0"
   },
   "scripts": {
+    "dev": "node --env-file=.env codex/server/index.js",
+    "dev:watch": "node --watch --env-file=.env codex/server/index.js",
+    "dev:mcp": "node --env-file=.env codex/server/collab/mcp-bridge.js",
     "start": "node --env-file=.env codex/server/index.js",
     "start:server": "node --env-file=.env codex/server/index.js",
 
