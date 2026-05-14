@@ -1,0 +1,13 @@
+node_modules/
+output/
+*.log
+.env
+.env.local
+.DS_Store
+dist/
+coverage/
+.vitest-cache/
+*.sqlite
+*.sqlite-journal
+*.sqlite-shm
+*.sqlite-wal

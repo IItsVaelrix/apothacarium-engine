@@ -1,0 +1,37 @@
+{
+  "cell_wall_version": "1.0.0",
+  "domain": {
+    "name": "analysis_pipeline",
+    "layer": "core",
+    "founding_pdr": "PDR-2026-03-04-BRAIN-ROOT",
+    "owner_agent": "Gemini"
+  },
+  "boundary": {
+    "declared_responsibilities": [
+      "document_tokenization",
+      "phonetic_preparation",
+      "algorithmic_parse_signal_generation"
+    ],
+    "forbidden_imports": [
+      "src/**",
+      "codex/services/**",
+      "codex/runtime/**",
+      "codex/server/**"
+    ],
+    "allowed_consumers": [
+      "codex/runtime/wordLookupPipeline.js",
+      "codex/core/judiciary.js",
+      "codex/core/combat.scoring.js"
+    ],
+    "max_export_surface": 15,
+    "stacking_tier_ownership": []
+  },
+  "nucleus": {
+    "canonical_contract": "AnalyzedDocument",
+    "drift_threshold": 0.15
+  },
+  "health": {
+    "hyperplasia_risk": "critical",
+    "notes": "Currently violating Cell Wall via src/lib/wordTokenization.js import. Requires surgical extraction."
+  }
+}

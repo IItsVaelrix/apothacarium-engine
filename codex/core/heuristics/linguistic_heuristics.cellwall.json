@@ -1,0 +1,36 @@
+{
+  "cell_wall_version": "1.0.0",
+  "domain": {
+    "name": "linguistic_heuristics",
+    "layer": "core",
+    "founding_pdr": "PDR-2026-03-10-HEURISTIC-SOVEREIGNTY",
+    "owner_agent": "Gemini"
+  },
+  "boundary": {
+    "declared_responsibilities": [
+      "text_cohesion_scoring",
+      "emotional_resonance_detection",
+      "literary_device_analysis",
+      "phonetic_hacking_heuristics"
+    ],
+    "forbidden_imports": [
+      "src/**",
+      "codex/services/**",
+      "codex/runtime/**"
+    ],
+    "allowed_consumers": [
+      "codex/core/combat.scoring.js",
+      "codex/core/analysis.pipeline.js"
+    ],
+    "max_export_surface": 20,
+    "stacking_tier_ownership": []
+  },
+  "nucleus": {
+    "canonical_contract": "ScoreTrace",
+    "drift_threshold": 0.15
+  },
+  "health": {
+    "hyperplasia_risk": "high",
+    "notes": "Currently dependent on src/lib/ detectors (literaryDevices, emotion). Requires logic migration to codex/core/shared/."
+  }
+}

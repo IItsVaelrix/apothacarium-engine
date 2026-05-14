@@ -1,0 +1,34 @@
+{
+  "cell_wall_version": "1.0.0",
+  "domain": {
+    "name": "pixelbrain_engines",
+    "layer": "core",
+    "founding_pdr": "PDR-2026-04-05-PIXELBRAIN-SANDBOX",
+    "owner_agent": "Gemini"
+  },
+  "boundary": {
+    "declared_responsibilities": [
+      "bytecode_to_pixel_mapping",
+      "lattice_grid_coordination",
+      "chroma_quantization"
+    ],
+    "forbidden_imports": [
+      "src/**",
+      "codex/services/**"
+    ],
+    "allowed_consumers": [
+      "codex/core/microprocessors/pixel/**",
+      "codex/runtime/animationPipeline.js"
+    ],
+    "max_export_surface": 25,
+    "stacking_tier_ownership": ["Z_BASE"]
+  },
+  "nucleus": {
+    "canonical_contract": "PixelBrainPayload",
+    "drift_threshold": 0.1
+  },
+  "health": {
+    "hyperplasia_risk": "critical",
+    "notes": "Violating Sandbox Law via src/lib/processor-bridge.js. This is a primary target for the Great Stasis Pass."
+  }
+}

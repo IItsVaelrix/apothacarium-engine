@@ -1,0 +1,28 @@
+        const activeMcpLocks = locks.filter(l => l.mcp_active);
+
+        return {
+            online_agents: agents.filter(agent => agent.status !== 'offline').length,
+            total_agents: agents.length,
+            active_tasks: taskCounts.active_tasks,
+            total_tasks: taskCounts.total_tasks,
+            running_pipelines: pipelineCounts.running_pipelines,
+            active_locks: locks.length,
+            mcp_port: {
+                active_bindings: activeMcpLocks.length,
+                throughput: activeMcpLocks.reduce((sum, l) => sum + (l.mcp_stream?.throughput || 0), 0)
+            }
+        };
+    },
+
+    async listCodebaseFiles() {
+        return await listFilesInternal();
+    },
+
+    async searchHybrid(query) {
+        return await searchHybridInternal(query);
+    },
+
+    async getFileNeighbors(filePath) {
+        return await getNeighborsInternal(filePath);
+    },
+};

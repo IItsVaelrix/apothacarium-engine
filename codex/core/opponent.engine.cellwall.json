@@ -1,0 +1,36 @@
+{
+  "cell_wall_version": "1.0.0",
+  "domain": {
+    "name": "opponent_engine",
+    "layer": "core",
+    "founding_pdr": "PDR-2026-04-12-COMBAT-BRAIN",
+    "owner_agent": "Gemini"
+  },
+  "boundary": {
+    "declared_responsibilities": [
+      "opponent_creation",
+      "opponent_spell_generation",
+      "tactical_doctrine_execution"
+    ],
+    "forbidden_imports": [
+      "src/**",
+      "codex/services/**",
+      "codex/runtime/**",
+      "codex/server/**"
+    ],
+    "allowed_consumers": [
+      "codex/services/combat.service.js",
+      "codex/core/combat.scoring.js"
+    ],
+    "max_export_surface": 10,
+    "stacking_tier_ownership": []
+  },
+  "nucleus": {
+    "canonical_contract": "CombatOpponent",
+    "drift_threshold": 0.15
+  },
+  "health": {
+    "hyperplasia_risk": "high",
+    "notes": "Determinism (Law 6) recently restored. Internal logic remains clean, but boundary needs hardening."
+  }
+}
