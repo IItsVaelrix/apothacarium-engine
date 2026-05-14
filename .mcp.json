@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "apothacarium-collab": {
+      "command": "node",
+      "args": ["--env-file=.env", "codex/server/collab/mcp-bridge.js"]
+    }
+  }
+}

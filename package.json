@@ -10,12 +10,67 @@
   "scripts": {
     "start": "node --env-file=.env codex/server/index.js",
     "start:server": "node --env-file=.env codex/server/index.js",
+
+    "init:secrets": "node scripts/init-secrets.js",
+    "init:secrets:force": "node scripts/init-secrets.js --force",
+
     "mcp:collab": "node --env-file=.env codex/server/collab/mcp-bridge.js",
-    "mcp:probe": "node codex/server/collab/mcp-probe.js",
+    "mcp:probe": "node scripts/debug-mcp-bridge.js",
+    "mcp:probe:env": "node --env-file=.env scripts/debug-mcp-bridge.js",
+    "mcp:call": "node scripts/call-mcp-tool.js",
+    "mcp:functional-audit": "node scripts/mcp-functional-audit.js",
+
+    "collab:client": "node scripts/collab-client.js",
+    "collab:admin": "node scripts/collab-admin.js",
+    "collab:daemon": "node scripts/collab-daemon.js",
+    "collab:connect": "node scripts/connect-collab.js",
+    "collab:verify": "node scripts/verify-collab-v1.1.js",
+
+    "cleri": "node scripts/cleri-raid.js",
+    "cleri:probe": "node scripts/cleri-probe.js",
+
+    "immune:scan": "node scripts/immunity-pre-commit.js --staged",
+    "immune:scan:all": "node scripts/immunity-pre-commit.js --all",
+    "immune:scan:json": "node scripts/immunity-pre-commit.js --staged --json",
+
+    "diagnostic:scan": "node codex/core/diagnostic/run-diagnostic.cli.js",
+    "diagnostic:scan:ci": "node codex/core/diagnostic/run-diagnostic.cli.js --trigger ci",
+    "diagnose:db": "node scripts/diagnose-db-health.js",
+
+    "sani:scan": "node scripts/pb-sani/run.js",
+    "sani:scan:json": "node scripts/pb-sani/run.js --json",
+    "sani:delete": "node scripts/pb-sani/run.js --status DELETE",
+    "sani:archive": "node scripts/pb-sani/run.js --status ARCHIVE",
+    "sani:review": "node scripts/pb-sani/run.js --status REVIEW",
+
+    "bible:synthesis": "node scripts/bible-synthesis.js",
+    "memory:infuse": "node scripts/memory-cell-infusion.js",
+    "polish": "node scripts/production-polish.js full",
+    "polish:quick": "node scripts/production-polish.js quick",
+    "polish:ci": "node scripts/production-polish.js full --ci",
+
+    "verify:backend-contract": "node scripts/verify-backend-contract.js",
+    "verify:rhyme-astrology:phase0": "node scripts/verify-rhyme-astrology-phase0.js",
+    "build:rhyme-astrology:index": "node scripts/buildRhymeAstrologyIndex.js",
+
+    "audit:bytecode-vectors": "node scripts/audit_bytecode_vectors.js",
+    "audit:dead-code": "node scripts/dead-code-detector.mjs",
+    "audit:cell-wall": "node scripts/cell-wall-audit.js",
+
+    "heartbeat": "node scripts/heartbeat-pulse.mjs",
+    "heartbeat:permanent": "node scripts/permanent-heartbeat.js",
+
+    "db:setup": "node scripts/setup_database.cjs",
+    "ritual:init": "node scripts/ritual-init.js",
+
+    "security:qa": "node scripts/security/security-qa.js",
+    "security:audit": "node scripts/security/dependency-audit.js",
+
     "generate": "node adapters/cli.js",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:integration": "vitest run tests/integration",
+    "test:integration:full": "node tests/integration/full-pipeline.mjs",
     "typecheck": "tsc -p tsconfig.json --noEmit"
   },
   "dependencies": {
