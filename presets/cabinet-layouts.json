@@ -1,0 +1,80 @@
+{
+  "layouts": [
+    {
+      "id": "tall-organic-cabinet",
+      "name": "Tall Organic Apothecary Cabinet",
+      "cols": 16,
+      "rows": 24,
+      "cellSize": 8,
+      "anchorPoints": {
+        "focalGlow": { "col": 7, "row": 11 },
+        "topRow": 2,
+        "midShelf": 12,
+        "bottomShelf": 21
+      },
+      "shelves": [
+        { "row": 4, "label": "top jars" },
+        { "row": 10, "label": "scrolls" },
+        { "row": 16, "label": "mid jars" },
+        { "row": 21, "label": "mushrooms / roots" }
+      ],
+      "slots": [
+        { "col": 1, "row": 4, "category": "jars" },
+        { "col": 3, "row": 4, "category": "jars" },
+        { "col": 5, "row": 4, "category": "jars" },
+        { "col": 7, "row": 4, "category": "jars" },
+        { "col": 4, "row": 2, "category": "herbs" },
+        { "col": 6, "row": 2, "category": "herbs" },
+        { "col": 1, "row": 10, "category": "scrolls" },
+        { "col": 5, "row": 10, "category": "scrolls" },
+        { "col": 2, "row": 16, "category": "jars" },
+        { "col": 4, "row": 16, "category": "jars" },
+        { "col": 6, "row": 16, "category": "jars" },
+        { "col": 2, "row": 21, "category": "mushrooms" },
+        { "col": 5, "row": 21, "category": "mushrooms" },
+        { "col": 7, "row": 11, "category": "glowing" },
+        { "col": 1, "row": 8, "category": "symbols" },
+        { "col": 5, "row": 8, "category": "symbols" },
+        { "col": 1, "row": 18, "category": "symbols" },
+        { "col": 5, "row": 18, "category": "symbols" }
+      ]
+    },
+    {
+      "id": "wide-low-cabinet",
+      "name": "Wide Low Apothecary Counter",
+      "cols": 32,
+      "rows": 16,
+      "cellSize": 4,
+      "anchorPoints": {
+        "focalGlow": { "col": 15, "row": 7 },
+        "topRow": 2,
+        "midShelf": 8,
+        "bottomShelf": 13
+      },
+      "shelves": [
+        { "row": 3, "label": "top herbs" },
+        { "row": 8, "label": "main jars" },
+        { "row": 13, "label": "mushrooms" }
+      ],
+      "slots": [
+        { "col": 4, "row": 3, "category": "herbs" },
+        { "col": 8, "row": 3, "category": "herbs" },
+        { "col": 4, "row": 8, "category": "jars" },
+        { "col": 7, "row": 8, "category": "jars" },
+        { "col": 10, "row": 8, "category": "jars" },
+        { "col": 12, "row": 8, "category": "jars" },
+        { "col": 14, "row": 8, "category": "jars" },
+        { "col": 5, "row": 10, "category": "jars" },
+        { "col": 15, "row": 7, "category": "glowing" },
+        { "col": 6, "row": 9, "category": "glowing" },
+        { "col": 4, "row": 13, "category": "mushrooms" },
+        { "col": 10, "row": 13, "category": "mushrooms" },
+        { "col": 6, "row": 6, "category": "scrolls" },
+        { "col": 12, "row": 6, "category": "scrolls" },
+        { "col": 2, "row": 5, "category": "symbols" },
+        { "col": 8, "row": 5, "category": "symbols" },
+        { "col": 14, "row": 5, "category": "symbols" }
+      ]
+    }
+  ]
+}

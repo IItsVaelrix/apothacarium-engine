@@ -1,0 +1,29 @@
+{
+  "goldenRatio": 1.618,
+  "symmetry": {
+    "default": "vertical",
+    "confidence": 0.85,
+    "significanceThreshold": 0.55,
+    "axis": "center"
+  },
+  "totalBudget": {
+    "jars": [9, 14],
+    "herbs": [3, 5],
+    "mushrooms": [2, 4],
+    "scrolls": [3, 6],
+    "symbols": [5, 9],
+    "glowing": [2, 4]
+  },
+  "noModernity": {
+    "forbiddenColors": ["#00FF00", "#FF00FF", "#00FFFF"],
+    "maxBrightnessRgb": 240,
+    "forbiddenCategories": ["beaker", "burner", "led", "hologram", "screen"]
+  },
+  "crt": {
+    "scanlineIntensity": 0.3,
+    "curvature": 0.05,
+    "phosphorGlow": 0.1,
+    "chromaBlur": true,
+    "posterGrain": 0.08
+  }
+}

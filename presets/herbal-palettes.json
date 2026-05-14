@@ -1,0 +1,47 @@
+{
+  "$schema": "../presets/schemas/palette.schema.json",
+  "presets": [
+    {
+      "id": "cosmic-herbal",
+      "name": "Cosmic Herbal",
+      "colors": ["#2D1B4E", "#4A7C59", "#FFBF00", "#B8746E", "#F5F0E6", "#3E2723", "#E8D5B7"],
+      "use": {
+        "bg": 0,
+        "herbs": 1,
+        "glow": 2,
+        "accent": 3,
+        "labels": 4,
+        "cabinet": 5,
+        "borders": 6
+      }
+    },
+    {
+      "id": "scholomance-folk",
+      "name": "Scholomance Folk",
+      "colors": ["#1A1A2E", "#5B8C5A", "#E8A838", "#C27A7A", "#F5E6D3", "#4A3728", "#D4C4A8"],
+      "use": {
+        "bg": 0,
+        "herbs": 1,
+        "glow": 2,
+        "accent": 3,
+        "labels": 4,
+        "cabinet": 5,
+        "borders": 6
+      }
+    },
+    {
+      "id": "earth-dead",
+      "name": "Earth Dead",
+      "colors": ["#1F1A14", "#3C5236", "#A07A2B", "#8B5A3C", "#D9C9A8", "#2A1F17"],
+      "use": {
+        "bg": 0,
+        "herbs": 1,
+        "glow": 2,
+        "accent": 3,
+        "labels": 4,
+        "cabinet": 5,
+        "borders": 5
+      }
+    }
+  ]
+}

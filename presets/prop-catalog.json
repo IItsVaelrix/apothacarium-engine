@@ -1,0 +1,52 @@
+{
+  "categories": {
+    "jars": {
+      "label": "Bottles / jars",
+      "occupancy": { "w": 1, "h": 2 },
+      "colorUse": "herbs",
+      "emphasis": 0.85,
+      "anchorPolicy": "shelf",
+      "budget": [9, 14]
+    },
+    "herbs": {
+      "label": "Hanging herbs",
+      "occupancy": { "w": 1, "h": 3 },
+      "colorUse": "herbs",
+      "emphasis": 0.8,
+      "anchorPolicy": "top-row",
+      "budget": [3, 5]
+    },
+    "mushrooms": {
+      "label": "Mushrooms / roots",
+      "occupancy": { "w": 1, "h": 1 },
+      "colorUse": "cabinet",
+      "emphasis": 0.85,
+      "anchorPolicy": "bottom-shelf",
+      "budget": [2, 4]
+    },
+    "scrolls": {
+      "label": "Scrolls / labels",
+      "occupancy": { "w": 2, "h": 1 },
+      "colorUse": "labels",
+      "emphasis": 0.6,
+      "anchorPolicy": "mid-shelf",
+      "budget": [3, 6]
+    },
+    "symbols": {
+      "label": "Etched symbols",
+      "occupancy": { "w": 1, "h": 1 },
+      "colorUse": "borders",
+      "emphasis": 0.45,
+      "anchorPolicy": "etched",
+      "budget": [5, 9]
+    },
+    "glowing": {
+      "label": "Glowing elements",
+      "occupancy": { "w": 1, "h": 1 },
+      "colorUse": "glow",
+      "emphasis": 1.0,
+      "anchorPolicy": "focal",
+      "budget": [2, 4]
+    }
+  }
+}
